@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './Portfolio.module.css';
+import Modal from '../../components/UI/Modal/Modal'
 
 const Portfolio = () => {
+  const [project, setProject] = useState('');
+  const [categories, setCategories] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+
+  const categoryChangedHandler = (category) => {
+    setSelectedCategory(category);
+}
+
   return (
     <div className={classes.Portfolio} >
       <section className="col-md-12">
@@ -13,6 +22,18 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+      <React.Fragment>
+                <ProjectControls
+                    categorySelected={categoryChangedHandler}
+                    categories={categories}
+                    activeCategory={selectedCategory}
+                    btnType= "ButtonMenu"
+                    activeBtnType= "ButtonMenuActive" />
+
+                <ProjectListing
+                    projects={project[selectedCategory]}
+                />
+            </React.Fragment>
     </div>
   );
 };
