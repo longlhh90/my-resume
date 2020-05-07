@@ -1,0 +1,130 @@
+.Profile {
+    background: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    margin-bottom: 5px;
+}
+
+.ProfileName {
+    line-height: 18px;
+    padding: 20px;
+}
+
+.Name {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Job {
+    font-size: 13px;
+    color: #777777;
+}
+
+.ProfileImage {
+    margin-top: -18px;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+
+.ProfileImage img {
+    width: 100%;
+}
+
+.ProfileInfo {
+    list-style: none;
+    margin: 8px 0px 8px 15px;
+}
+
+.ProfileInfo li {
+    border-left: solid 2px #eee;
+    padding: 0 0 23px 20px;
+    font-size: 14px;
+    color: #787878;
+}
+
+.ProfileInfo li p {
+    font-size: 13.5px;
+    color: #7F7F7F;
+    line-height: 12px;
+}
+
+.ProfileInfo li:last-child {
+    border: 0;
+    margin-left: 2px;
+    margin-top: -2px;
+}
+
+.ProfileInfo li:before {
+    content: "";
+    border: solid 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    font-size: 8px;
+    margin-left: -25px;
+    margin-top: 2px;
+    font-weight: 400;
+    background: #fff;
+    display: block;
+    position: absolute;
+}
+
+.ProfileInfo li span {
+    color: #000;
+}
+
+.ProfileInfo li:first-child {
+    padding-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.ProfileInfo li:first-child img {
+    margin: -44px -44px;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+}
+
+.ProfileInfo li:first-child:before {
+    margin-left: -51px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    padding: 11px 14px;
+    box-shadow: 0px 2px 32px 0px rgba(4, 123, 248, 0.3);
+    background: #d81300;
+    border-color: #d81300;
+    color: #fff;
+}
+
+.ProfileInfo li:first-child:after {
+    background: url(../../assets/images/glasses-w.png) no-repeat;
+    content: '';
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px -15px;
+    background-size: 27px 10px;
+}
+
+.ButtonArea {
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}

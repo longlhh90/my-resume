@@ -1,0 +1,18 @@
+.Icon{
+    font-size: xx-large;
+    margin: 15px;
+    color: #dd3333!important;
+}
+
+.Col {
+    text-align: center;
+}
+
+.Col h3 span {
+    text-transform: capitalize;
+}
+
+.Col a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,23 @@
+.FooterItem {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+.FooterItem li {
+    display: block;
+}
+
+.FooterItem li a,
+.FooterItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.Footer {
+    margin: 10px 0 0;
+    width: 100%;
+    background-color: black;
+}
