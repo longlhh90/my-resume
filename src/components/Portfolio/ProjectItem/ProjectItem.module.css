@@ -1,15 +1,15 @@
 .ProjectItem {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .Image {
-    max-width: 20%;
-    height: 60px;
-    border-radius: 50px;
+    max-width: 80%;
+    /* height: 60px; */
+    /* border-radius: 50px; */
 }
 
 .DescriptionContainer {

@@ -12,41 +12,41 @@ class MenuListing extends Component {
         let rows = [];
         let cols = [];
         let count = 1;
-        const projects= [];
+        const projects = [];
         for (let key in this.props.projects) {
-            projects.push( {
+            projects.push({
                 projectId: key,
                 project: this.props.projects[key].prjName,
                 image: this.props.projects[key].imgURL,
-                link: this.props.projects[key].link, 
-                description: this.props.projects[key].Desc,
+                link: this.props.projects[key].link,
+                description: this.props.projects[key].desc,
             })
         }
 
         projects.forEach(project => {
-                if (count%2===0) {
-                    // add to cols
-                    cols.push(project);
-                    // add to rows
-                    rows.push(cols);
-                    // reset cols array
-                    cols = [];
-                } else {
-                    cols.push(project);
-                }
-                // for last elements
-                if (count === projects.length && cols.length > 0) {
-                    // fill cols to the limit
-                    for (let i = cols.length; i< displayCols; i++) {
-                        cols.push({});
-                    }
-                    rows.push(cols);
-                    cols = [];
-                }
-                count++;
+            if (count % 2 === 0) {
+                // add to cols
+                cols.push(project);
+                // add to rows
+                rows.push(cols);
+                // reset cols array
+                cols = [];
+            } else {
+                cols.push(project);
             }
+            // for last elements
+            if (count === projects.length && cols.length > 0) {
+                // fill cols to the limit
+                for (let i = cols.length; i < displayCols; i++) {
+                    cols.push({});
+                }
+                rows.push(cols);
+                cols = [];
+            }
+            count++;
+        }
         );
-        
+
         // transform!!
         let listing = rows.map((row, ridx) => {
             return (
@@ -57,12 +57,11 @@ class MenuListing extends Component {
                                 // valid column
                                 return (
                                     <Col lg={true} key={col.projectId}>
-                                        <ProjectItem 
+                                        <ProjectItem
                                             imageSrc={col.image}
                                             title={col.project}
                                             link={col.link}
                                             description={col.description}
-                                            add={() => this.props.add(col)}
                                         />
                                     </Col>
                                 );
@@ -72,13 +71,13 @@ class MenuListing extends Component {
                                     <Col key={cidx}></Col>
                                 )
                             }
-                            
+
                         })
                     }
                 </Row>
             );
         })
-        
+
         return (
             <React.Fragment>
                 <Container className={classes.ProjectListing}>
@@ -88,8 +87,8 @@ class MenuListing extends Component {
 
             </React.Fragment>
         );
-            
-        
+
+
     }
 }
 
