@@ -13,7 +13,7 @@ const ProjectItem = (props) => {
                     </div>
                     <div className={classes.Description}>{props.description}</div>
                     <div className={classes.ViewControls}>
-                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                        <a href={props.link} target="_blank" rel="noopener noreferrer">
                             <Button btnType="ButtonFormSmall">View</Button>
                         </a>
                     </div>

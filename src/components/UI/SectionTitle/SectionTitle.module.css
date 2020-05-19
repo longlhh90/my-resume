@@ -1,0 +1,27 @@
+.SectionTitle {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+  
+  .SectionTitle h1,
+  .SectionTitle h2,
+  .SectionTitle h3,
+  .SectionTitle h4,
+  .SectionTitle h5 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .SectionTitle span {
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.4;
+    left: 0;
+    background-color: #ea2c19 !important;
+  }

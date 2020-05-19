@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Profile from '../components/Profile/Profile';
@@ -8,7 +9,7 @@ class Page extends Component {
         const PageComponent = this.props.component;
 
         return (
-            <div className='container'>
+            <Container style={{'marginTop': '100px'}}>
                 <Row >
                     <Col md={4}>
                         <Profile />
@@ -17,7 +18,7 @@ class Page extends Component {
                         <PageComponent />
                     </Col>
                 </Row>
-            </div>
+            </Container>
         );
     }
 }
