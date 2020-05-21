@@ -1,6 +1,9 @@
 import React from 'react';
 import classes from './About.module.css';
 import SectionTitle from '../UI/SectionTitle/SectionTitle';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Aboutme = () => {
   return (
@@ -25,53 +28,43 @@ const Aboutme = () => {
 
       <section>
         <SectionTitle title='My Skills' />
-        <div className="row">
-          <div className="col-md-6 bar-grids">
-            <h6>WEB DESIGN  <span> 80% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '80%' }}>
-              </div>
+        <Row>
+          <Col md={6} >
+            <div className={classes.Bargrids}>
+              <h6>WEB DESIGN</h6>
+              <span>80%</span>
+              <ProgressBar animated now={80} variant="danger" className={classes.Bar} />
             </div>
-            <h6>UI DESIGN &amp; DEVELOPER <span> 70% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '70%' }}>
-              </div>
+
+            <div className={classes.Bargrids}>
+            <h6>UI DESIGN &amp; DEVELOPER</h6>
+            <span>70%</span>
+            <ProgressBar animated now={70} variant="danger" className={classes.Bar} />
             </div>
-            <h6>HTML/CSS<span>90% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '90%' }}>
-              </div>
+
+            <div className={classes.Bargrids}>
+            <h6>HTML/CSS</h6>
+            <span>90%</span>
+            <ProgressBar animated now={90} variant="danger" className={classes.Bar} />
             </div>
-            <h6>PHOTOSHOP <span> 75% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '75%' }}>
-              </div>
+
+            <div className={classes.Bargrids}>
+            <h6>PHOTOSHOP</h6>
+            <span>75%</span>
+            <ProgressBar animated now={75} variant="danger" className={classes.Bar} />
             </div>
-          </div>
-          <div className="col-md-6 bar-grids">
+          </Col>
+          <Col md={6} className={classes.Bargrids}>
             <h6>PROJECT MANAGEMENT <span> 85% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '85%' }}>
-              </div>
-            </div>
-            <h6>SOCIAL MEDIA MARKETING<span> 95% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '95%' }}>
-              </div>
-            </div>
+            <ProgressBar animated now={85} variant="danger" />
+            <h6>SOCIAL MEDIA MARKETING <span> 95% </span></h6>
+            <ProgressBar animated now={95} variant="danger" />
             <h6>UX DEVELOPER<span>80% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '80%' }}>
-              </div>
-            </div>
+            <ProgressBar animated now={80} variant="danger" />
             <h6>PHP DESIGN<span> 60% </span></h6>
-            <div className="progress">
-              <div className="progress-bar progress-bar-striped active" style={{ width: '60%' }}>
-              </div>
-            </div>
-          </div>
-          <div className="clearfix"> </div>
-        </div>
+            <ProgressBar animated now={60} variant="danger" />
+          </Col>
+        </Row>
       </section>
       {/* My Services Section */}
       <section>
@@ -81,7 +74,7 @@ const Aboutme = () => {
           {/* a service */}
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className={classes.Service}>
-              <div className="icon">
+              <div className="icon" style={{"color": "#d81300"}}>
                 <i className="fa fa-code" />
               </div>
               <span>Web Development</span>
@@ -91,7 +84,7 @@ const Aboutme = () => {
           {/* a service */}
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className={classes.Service}>
-              <div className="icon">
+              <div className="icon" style={{"color": "#d81300"}}>
                 <i className="fa fa-chart-pie" />
               </div>
               <span>Business System Analysis</span>
@@ -101,7 +94,7 @@ const Aboutme = () => {
           {/* a service */}
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className={classes.Service}>
-              <div className="icon">
+              <div className="icon" style={{"color": "#d81300"}}>
                 <i className="fa fa-chart-line" />
               </div>
               <span>Data Analysis</span>

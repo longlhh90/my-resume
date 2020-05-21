@@ -33,3 +33,28 @@
     min-height: 186px;
     margin-bottom: 10px;
 }
+
+.Bargrids {
+    padding-bottom: 20px;
+}
+
+.Bargrids h6 {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.Bargrids span {
+    float: right;
+    margin-right: 10px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.Bar {
+    height: 0.5rem;
+}
