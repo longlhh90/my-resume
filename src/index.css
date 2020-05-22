@@ -30,19 +30,4 @@ p {
   line-height: 18px;
 }
 
-blockquote {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-/* Margins & Paddings */
-
-.padding_15 {
-  padding-top: 15px;
-}
-
-.padbot_30 {
-  padding-bottom: 30px;
-}
 

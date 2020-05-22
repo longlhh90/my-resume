@@ -41,7 +41,6 @@ const Resume = () => {
     if (isLoading) {
         expComponent = <Spinning />
     }
-
     else if (exp) {
         expComponent =
             <React.Fragment>

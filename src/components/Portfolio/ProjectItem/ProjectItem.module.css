@@ -41,7 +41,7 @@
 
 .Description {
     padding-top: 0.3em;
-    font-family: 'Lora';
+    /* font-family: 'Lora'; */
     font-weight: lighter;
     font-style: italic;
     font-size: small;
@@ -49,19 +49,8 @@
     line-height: 1.5em;
 }
 
-.Spacer {
-    flex: 1 1 auto;
-    /* height: .8px; */
-    /* align-self: flex-end; */
-    border-bottom: dashed 1px #aaa;
-    background-size: cover;
-    display: table-cell;
-    width: auto;
-    box-sizing: border-box;
-}
-
-.OrderControls {
+.ViewControls {
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
