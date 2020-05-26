@@ -4,8 +4,7 @@ import classes from './SectionTitle.module.css';
 const SectionTitle = (props) => {
   return (
     <div className={classes.SectionTitle}>
-      <span />
-      <h2>{props.title}</h2>
+      <h2><span>{props.title}</span></h2>
     </div>
   );
 };
