@@ -69,6 +69,10 @@
     color: #000;
 }
 
+.ProfileInfo li p a {
+    color: #7F7F7F;
+}
+
 .ProfileInfo li:first-child {
     padding-bottom: 10px;
     padding-left: 30px;

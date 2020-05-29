@@ -55,16 +55,20 @@ const Profile = () => {
             <div className={classes.Profile}>
                 {profileComponent}
                 <div className={classes.ButtonArea}>
-                    <Button
-                        btnType="Icon"
-                        icon="fa fa-download">
-                        Download Resume
-                </Button>
-                    <Button
-                        btnType="Icon"
-                        icon="fa fa-paper-plane">
-                        Hire Me
-                </Button>
+                    <a href="https://drive.google.com/open?id=10v5XdcTwSIITKvMXtCqa47hHVttg7hlC" target="_blank" rel="noopener noreferrer">
+                        <Button
+                            btnType="Icon"
+                            icon="fa fa-download">
+                            Download Resume
+                        </Button>
+                    </a>
+                    <a href="mailto:me@longlhh.ca" target="_blank" rel="noopener noreferrer">
+                        <Button
+                            btnType="Icon"
+                            icon="fa fa-paper-plane">
+                            Hire Me
+                        </Button>
+                    </a>
                 </div>
             </div>
         </React.Fragment>
